@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography</title>
+    <link rel="stylesheet" href="./works.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div class="workgrid">
+        <div class="head">
+          <h1>MY WORK GRID</h1>
+        </div>
+        <div class="desc">
+          <p>
+            Photography is my passion.Through the lens the world looks different
+            and i would like to show you this difference.You can see it in my
+            albums that are presented here.
+          </p>
+        </div>
+        <div class="con1">
+          <div class="sec1">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/slider-parallax-01.jpg"
+              alt=""
+            />
+            <p>WEDDING PHOTOS</p>
+            <p class="name">MY SPECIAL DAY</p>
+          </div>
+          <div class="sec2">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/album02-alt-1024x640.jpg"
+              alt=""
+            />
+            <p>COMMERCIAL PHOTOS</p>
+            <p class="name">HARLEY DAVIDSON</p>
+          </div>
+        </div>
+        <div class="con2">
+          <div class="sec3">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/album03-alt-1024x640.jpg"
+              alt=""
+            />
+            <p>LOVE STORY</p>
+            <p class="name">FOREVER TOGETHER</p>
+          </div>
+          <div class="sec4">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/album04-alt-1024x640.jpg"
+              alt=""
+            />
+            <p>NATURE PHOTOS</p>
+            <p class="name">SUNSET NATURE</p>
+          </div>
+        </div>
+        <div class="con3">
+          <div class="sec5">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/album05.jpg"
+              alt=""
+              srcset=""
+            />
+            <p>PERSONAL SESSIONS</p>
+            <p class="name">GIRL ON FARM</p>
+          </div>
+          <div class="sec6">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/album18-alt-1024x640.jpg"
+              alt=""
+            />
+            <p>COMMERCIAL PHOTOS</p>
+            <p class="name">CRAZY RIDES</p>
+          </div>
+        </div>
+        <div class="con4">
+          <div class="sec7">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/bricks-2x3-01-1024x683.jpg"
+              alt=""
+            />
+            <p>WEDDING PHOTOS</p>
+            <p class="name">NEW FAMILY</p>
+          </div>
+          <div class="sec8">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/album09-alt-1024x640.jpg"
+              alt=""
+            />
+            <p>TRAVEL PHOTOS</p>
+            <p class="name">ABANDONED</p>
+          </div>
+        </div>
+        <div class="con5">
+          <div class="sec9">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/album16-alt-1024x640.jpg"
+              alt=""
+            />
+            <p>TRAVEL PHOTOS</p>
+            <p class="name">DOWNTOWN</p>
+          </div>
+          <div class="sec10">
+            <img
+              src="https://demo.shadow-themes.com/wp/ashade/wp-content/uploads/2020/01/album13-alt-1024x640.jpg"
+              alt=""
+            />
+            <p>NATURE PHOTOS</p>
+            <p class="name">MOUNTAINS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script>
+      let cursor = document.getElementById("cursor");
+      function isTouchDevice() {
+        try {
+          document.createEvent("TouchEvent");
+          return true;
+        } catch (e) {
+          return false;
+        }
+      }
+
+      const move = (e) => {
+        try {
+          var x = !isTouchDevice() ? e.pageX : e.touches[0].pageX;
+          var y = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
+        } catch (e) {}
+        cursor.style.left = x - 30 + "px";
+        cursor.style.top = y - 30 + "px";
+      };
+      document.addEventListener("mousemove", (e) => {
+        move(e);
+      });
+      document.addEventListener("touchmove", (e) => {
+        move(e);
+      });
+    </script>
+  </body>
+</html>
