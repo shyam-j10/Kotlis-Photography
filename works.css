@@ -67,3 +67,8 @@ p {
   text-align: center;
   padding-top: 50px;
 }
+
+h1 {
+  transform: translateX(-30%);
+  color: beige;
+}
