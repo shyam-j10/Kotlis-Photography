@@ -49,6 +49,7 @@ img:hover {
 p {
   margin-left: 5%;
   font-size: 15px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .head {
@@ -60,4 +61,5 @@ p {
 h1 {
   transform: translateX(-30%);
   color: beige;
+  font-family: "Montserrat", sans-serif;
 }
