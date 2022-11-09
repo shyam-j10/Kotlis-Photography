@@ -1,0 +1,22 @@
+* {
+  background-color: black;
+  color: beige;
+}
+
+.box {
+  background-color: beige;
+  border: 1px solid beige;
+  border-radius: 5px;
+  width: 30%;
+  padding: 20px;
+  margin-left: 30%;
+}
+
+input {
+  transform: translateX(50%);
+}
+button {
+  padding: 5px;
+  margin-top: 20px;
+  transform: translateX(60%);
+}
